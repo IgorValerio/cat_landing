@@ -2,14 +2,8 @@
 
 namespace App\Controllers;
 
-class HomeController
+class HomeController extends Controller
 {
-  private $container;
-
-  public function __construct($container)
-  {
-    $this->container = $container;  
-  }
 
   public function index($request, $response)
   {
