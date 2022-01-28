@@ -1,0 +1,141 @@
+header
+    display: inline-flex
+    width: 100%
+    background-color: rgba(0,0,0,0.7)
+    position: fixed
+    z-index: 2
+
+    .container
+        display: inline-flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 15px
+        padding-bottom: 15px  
+
+        .btn-menu
+          color:#FFF
+          height: 100%
+          display: inline-flex
+          align-items: center
+          padding: 0 20px
+          background-color: #333
+          cursor: pointer
+
+          @include desktop
+            display: none
+        
+        .menus
+
+            &.active
+              right: 0
+              &:before
+                width: 100vw
+                @include desktop
+                    display: none
+
+            &:before
+              width: 0
+              height: 100%
+              background-color: #0000005c
+              content: " "
+              position: absolute
+              left: -100vw
+            
+            display: block
+            position: fixed
+            right: -250px
+            top: 99px
+            width: 250px
+            background-color:#fff
+            height: calc(100vh - 99px)
+            transition: .5s
+
+            @include desktop
+
+              display: inline-flex
+              align-items: center
+              justify-content: flex-end
+              width: 100%
+              position: relative
+              right: initial
+              top: initial
+              background-color: transparent
+              height: initial         
+            
+            .menu
+                width: 100%
+                display: block
+                @include desktop
+                  width: auto
+                
+                ul
+
+                  flex-wrap: wrap
+                  display: inline-flex
+                  width: auto
+                  justify-content: space-between
+
+                  @include desktop
+                      flex-wrap: initial
+
+                  li
+                    width: 100%
+                    padding: 0.625rem 0.625rem
+
+                    @include desktop
+                        padding: 0 1.563rem
+                        width: auto
+
+                    @include desktop-hd
+                      padding: 0 2.813rem
+                    
+                    a
+                     
+                      color: #333
+                      position: relative
+                      padding: 0.563rem 0px
+
+                      @include desktop
+                          color: #FFF
+                      
+                      &:after
+                          background-color: #333
+                          width: 0
+                          height: 0.125rem
+                          content: ' '
+                          bottom: 0
+                          position: absolute
+                          left: 0
+                          transition: .25s
+
+                          @include desktop
+                            background-color: #fff
+
+                      &:hover
+                            &:after
+                                width: 100%
+
+            .social
+                color: #333
+                width: 100%
+                padding: 0.625rem 0.625rem
+                display: inline-flex
+                align-items: center
+
+                @include desktop
+                  color: #FFF
+                  width: auto
+                  padding: 0 0 0 1.563rem
+
+                @include desktop-hd
+                  padding: 0 0 0 2.813rem
+
+                a
+                  margin-left: 0.875rem
+                  i
+                    font-size: 1.2rem
+                    color: #000
+
+                    @include desktop
+                      color: #fff
+                      width: auto
