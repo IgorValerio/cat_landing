@@ -1,0 +1,15 @@
+@mixin smart-phone
+	@media (min-width: #{$smart-phone}px)
+		@content
+
+@mixin tablet
+	@media (min-width: #{$tablet}px)
+		@content
+	
+@mixin desktop
+	@media (min-width: #{$desktop}px)
+		@content
+	
+@mixin desktop-hd
+	@media screen and (min-width: #{$desktop-hd}px)
+		@content

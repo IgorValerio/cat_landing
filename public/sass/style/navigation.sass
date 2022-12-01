@@ -1,0 +1,39 @@
+.sticky-top
+  background-color: rgba(0, 0, 0, 0.7)
+
+.efeito
+  color: #FFF
+  position: relative
+  padding: 0px 10px
+  &:after
+    width: 0
+    height: 2px
+    background-color: #fff
+    content: ' '
+    bottom: -7px
+    position: absolute
+    left: 5px
+    transition: .25s  
+  &:hover
+    color: #fff
+    &:after
+      width: 90%  
+
+.nav-item .navbar-text
+  color: #FFF
+  font-family: montserrat
+.bi.bi-facebook
+  color: #1877f2
+
+.bi.bi-instagram
+  text-align: center
+  border-radius: 40px
+  color: #fff
+  background: #d6249f
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25)
+
+/* CSS Responsive*/
+
+@media only screen and (max-width: 767px)
+  

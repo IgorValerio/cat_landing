@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* Variaveis */
+/* -------------------------------------------------- */
+/* RESET CSS */
+/*-------------------------------------------------- */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none; }
+
+footer, header, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+/* Fontes */
+/*-------------------------------------------------- */
+/* @ "fontes/montserrat" */
+/* Plugins */
+/*-------------------------------------------------- */
+/* Padrão */
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.sticky-top {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.efeito {
+  color: #FFF;
+  position: relative;
+  padding: 0px 10px; }
+  .efeito:after {
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    content: " ";
+    bottom: -7px;
+    position: absolute;
+    left: 5px;
+    transition: 0.25s; }
+  .efeito:hover {
+    color: #fff; }
+    .efeito:hover:after {
+      width: 90%; }
+
+.nav-item .navbar-text {
+  color: #FFF;
+  font-family: montserrat; }
+
+.bi.bi-facebook {
+  color: #1877f2; }
+
+.bi.bi-instagram {
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); }
+
+/* CSS Responsive */
+/* Páginas */
+/*-------------------------------------------------- */
+#quem-sou-eu {
+  background-color: #000; }
+
+.btn {
+  background-color: #000; }
+
+.titulo {
+  color: #fff;
+  font-size: 36px;
+  line-height: 57px;
+  font-family: "Monteserrat Medium";
+  font-style: italic; }
+
+.titulo {
+  position: relative; }
+  .titulo:after {
+    width: 100%;
+    max-width: 150px;
+    height: 5px;
+    position: absolute;
+    content: " ";
+    background-color: #fff;
+    bottom: 0;
+    left: 0; }
+
+.text-light {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Monteserrat Regular"; }
+
+.text-dark {
+  font-family: "Monteserrat Regular";
+  font-size: 36px;
+  line-height: 57px;
+  font-style: italic; }
+
+.titulo-dark {
+  color: #000;
+  font-size: 36px;
+  line-height: 57px;
+  font-family: "Monteserrat Medium";
+  font-style: italic; }
+
+.titulo-dark {
+  position: relative; }
+  .titulo-dark:after {
+    width: 100%;
+    max-width: 150px;
+    height: 5px;
+    position: absolute;
+    content: " ";
+    background-color: #000;
+    bottom: 0;
+    left: 0; }
+
+.texto {
+  /* SM >= 576px */ }
+  .texto .titulo-dark {
+    font-size: 24px;
+    margin: 0 0 50px 0;
+    line-height: 36px; }
+    .texto .titulo-dark:after {
+      height: 3px; }
+
+@media (min-width: 576px) {
+  .eventos {
+    padding: 0 30px; }
+
+  /* SM >= 576px */ }
+/* MD >= */
+ * @media (min-width: 992px) */
+
+/*# sourceMappingURL=styles.css.map */

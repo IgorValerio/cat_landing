@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAY;EACX,gBAAgB,EAAE,IAAI;EAEtB,sBAAS;IACR,OAAO,EAAE,WAAW;IACpB,SAAS,EAAE,IAAI;IACf,eAAe,EAAE,aAAa;IAC9B,WAAW,EAAE,MAAM;EACpB,gBAAG;IACF,KAAK,EAAE,GAAG;EAEX,mBAAM;IACL,KAAK,EAAE,GAAG;IACV,KAAK,EAAE,IAAI",
+"sources": ["../paginas/home.sass"],
+"names": [],
+"file": "styles.css"
+}
