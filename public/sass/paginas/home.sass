@@ -23,17 +23,27 @@
     bottom: 0
     left: 0
 
-
-.text-light
-  font-size: 18px
-  line-height: 26px
-  font-family: 'Monteserrat Regular'
-
-.text-dark
-  font-family: 'Monteserrat Regular'
+.titulo-nossos-cursos
+  color: #fff
   font-size: 36px
   line-height: 57px
+  font-family: 'Monteserrat Medium'
   font-style: italic
+  position: relative
+  &:after
+    width: 100%
+    max-width: 100%
+    height: 5px
+    position: absolute
+    content: ' '
+    background-color: #fff
+    bottom: 0
+    left: 0  
+
+.text-dark
+  font-size: 18px
+  line-height: 26px
+  font-family: 'Monteserrat Medium'
 
 .titulo-dark
   color: #000
@@ -54,13 +64,51 @@
     bottom: 0
     left: 0  
 
+.curso1
+  font-size: 18px
+  margin: 0 0 50px 0
+  line-height: 26px
+  font-family: 'Monteserrat Medium' 
+  color: #fff
+  position: relative
+  &::after
+    width: 65%
+    max-width: 655px
+    height: 4px
+    position: absolute
+    content: ' '
+    background-color: #fff
+    bottom: 0
+    left: 0
+    right: 0
+    margin: 0 auto
+
 .texto
-  .titulo-dark
-    font-size: 24px
-    margin: 0 0 50px 0
-    line-height: 36px  
-    &:after
-      height: 3px
+  font-size: 18px
+  margin: 0 0 50px 0
+  line-height: 26px
+  font-family: 'Monteserrat Medium' 
+  color: #fff
+  position: relative  
+
+//====================================
+.nossos-cursos
+  background-color: #000
+
+.text-light
+  color: #fff
+  font-size: 18px
+  line-height: 26px
+  font-family: 'Monteserrat Medium'
+
+  
+.sub-titulo
+  color: #fff
+  font-size: 36px
+  line-height: 57px
+  font-family: 'Monteserrat Medium'
+  font-style: italic
+
 
   /* SM >= 576px */
 @media (min-width: 576px)
