@@ -32,7 +32,7 @@
   </div>
 </section>
 
-<section class="eventos p-lg-4">
+<section id="eventos p-lg-4">
   <div class="container-fluid-lg mx-auto">
     <div class="row lista">
       <div class="container-fluid-lg d-flex justify-content-center">
@@ -88,7 +88,7 @@
   </div>
 </section>
 
-<section class="nossos-cursos px-lg-5 py-lg-4">
+<section id="nossos_cursos" class="px-lg-5 py-lg-4">
   <div class="container-lg mx-auto">
     <div class="row lista">
       <div class="container-fluid-lg d-flex justify-content-center">
@@ -144,7 +144,7 @@
   </div>
 </section>
 
-<section class="videos p-lg-5">
+<section id="videos" class="p-lg-5">
   <div class="container">
     <div class="row">
       <div class="container-fluid-lg d-flex justify-content-center mb-5">
@@ -219,55 +219,47 @@
 
 </section>
 
-<!--
-
-  <img src="{{ base_url() }}/imagens/felino.png" alt="Eventos" class="img-fluid d-block">
-            </div>
-            <div class="carousel-item">
-              <img src="{{ base_url() }}/imagens/felino.png" alt="Eventos" class="img-fluid d-block">
-            </div>
-            <div class="carousel-item">
-              <img src="{{ base_url() }}/imagens/felino.png" alt="Eventos" class="img-fluid d-block">
-
--->
-
-<section class="fale-comigo">
-  <div class="container">
-    <div class="conteudo">
-      <div class="texto">
-        <h2 class="">Fale Comigo</h2>
-        <div class="itens">
-          <div class="item">
-            <h3>Telefone:</h3>
-            <div class="detalhes">
-              <i class="fab fa-whatsapp"></i>
-              <a href="tel:55 35 99999-9999">+55 35 99999-9999</a>
+<section id="fale-comigo" class="py-5">
+  <div class="container px-5">
+    <div class="row conteudo px-2">
+      <div class="col-lg-3 g texto">
+        <h2 class="titulo-nossos-cursos">Fale Comigo</h2>
+      </div>  
+    </div>  
+        <div class="row itens">
+          <div class="col-lg-3 item">
+            <h3 class="sub-titulo">Telefone:</h3>
+            <div class="text-light detalhes">
+              <i class="bi bi-whatsapp"></i>
+              <a href="tel:55 35 99999-9999" class="link-light">+55 35 99999-9999</a>
             </div>
           </div>
-          <div class="item">
-            <h3>Email:</h3>
+          <div class="col-lg-3 item">
+            <h3 class="sub-titulo">Email:</h3>
             <div class="detalhes">
-              <i class="fas fa-envelope-square"></i>
-              <a href="mailto:igorv386@gmail.com" target="_blank">igorv386@gmail.com</a>
+              <i class="bi bi-envelope-at"></i>
+              <a href="mailto:igorv386@gmail.com" target="_blank" class="link-light">igorv386@gmail.com</a>
             </div>
           </div>
-          <div class="item">
-            <h3>Siga-me:</h3>
+          <div class="col-lg-3 item">
+            <h3 class="sub-titulo">Siga-me:</h3>
             <div class="detalhes">
               <a href="#" target="_blank">
-                <i class="fab fa-facebook-f"></i>
+                <i class="bi bi-facebook ms-3"></i>
               </a>
               <a href="#" target="_blank">
-                <i class="fab fa-youtube"></i>
+                <i class="bi bi-youtube mx-4"></i>
               </a>
               <a href="#" target="_blank">
-                <i class="fab fa-instagram"></i>
+                <i class="bi bi-instagram me-3"></i>
               </a>
             </div>
+          </div>
+          <div class="col-lg-2 item">
+            <img src="{{ base_url() }}/imagens/dado_email.png" alt="Eventos" class="img-fluid img-responsive">
           </div>
         </div>
       </div>
-      <img class="img_contato" src="<?=URL_BASE?>resources/imagens/dado-email.png">
     </div>
   </div>
 </section>

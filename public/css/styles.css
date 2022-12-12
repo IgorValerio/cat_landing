@@ -180,7 +180,7 @@ input {
   color: #fff;
   position: relative; }
 
-.nossos-cursos {
+#nossos_cursos {
   background-color: #000; }
 
 .text-light {
@@ -214,11 +214,14 @@ input {
   .carousel-inner .altura {
     height: 100%; }
 
-.videos {
+#videos {
   background-color: #fff; }
 
 .carousel-control-prev-icon {
-  color: #000;
+  color: #000; }
+
+#fale-comigo {
+  background-color: #000;
   /* SM >= 576px */ }
 
 @media (min-width: 576px) {
