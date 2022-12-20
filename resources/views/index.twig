@@ -1,9 +1,9 @@
 {% extends 'layouts/base.twig' %}
 {% block content %}
 
-<section id="quem_sou_eu">
+<section id="quem_sou_eu" class="pt-lg-5">
   <div class="container-fluid-lg pt-5">
-    <div class="row ms-lg-5">
+    <div class="row ms-lg-5 pt-lg-3">
       <div class="col-lg-4 col-sm-12 mb-5 ms-5 ps-5">
         <img src="{{ base_url() }}/imagens/tonho.jpg" alt="Tonho" class="img-fluid d-block">
       </div>
@@ -24,7 +24,8 @@
           </p>
         </div>
         <div class="d-grid gap-2 d-md-flex mb-5">
-          <button class="btn btn-principal link-light btn-sm border border-white border-1 px-4 py-2 " type="button" target="_blank">Veja
+          <button class="btn btn-principal link-light btn-sm border border-white border-1 px-4 py-2 " type="button"
+            target="_blank">Veja
             o Video</button>
         </div>
       </div>
@@ -43,7 +44,7 @@
       </div>
 
       <div class="col-lg-6 col-sm-12 text-dark gx-5 mr-5 mb-5 pt-5">
-        <h4 class="titulo-dark mb-5">Titulo do Evento 1 vem aqui</h4>
+        <h4 class="sub-titulo-dark mb-3">Titulo do Evento 1 vem aqui</h4>
         <div class="descricao">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
@@ -67,7 +68,7 @@
         <img src="{{ base_url() }}/imagens/eventos.png" alt="Eventos" class="img-fluid d-block">
       </div>
       <div class="text-dark col-lg-6 col-sm-12 gx-5 mr-5 mb-5 pt-5">
-        <h4 class="titulo-dark mb-5">Titulo do Evento 2 vem aqui</h4>
+        <h4 class="sub-titulo-dark mb-3">Titulo do Evento 2 vem aqui</h4>
         <div class="descricao">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -90,55 +91,60 @@
 
 <section id="nossos_cursos" class="p-lg-5">
   <div class="container-lg mx-auto pt-5">
-    <div class="row lista">
-      <div class="container-fluid-lg d-flex justify-content-center">
-        <h2 class="titulo-nossos-cursos">Nossos Cursos</h2>
+    <div class="row lista mb-5">
+      <div class="col-lg-12">
+        <h2 class="titulo-nossos-cursos text-center">Nossos Cursos</h2>
       </div>
-      <div class="col-lg-4 col-sm-12 item g-5 mb-5 ms-lg-5 order-lg-2">
-        <img src="{{ base_url() }}/imagens/gato_estudioso.jpg" alt="Eventos" class="img-fluid d-block">
+    </div>
+    <div class="row justify-content-between curso1 pb-lg-5">
+      <div class="col-lg-3 w-100 mb-3">
+        <h4 class="sub-titulo">Curso 1 - Nome do Treinamento</h4>
       </div>
+      <div class="col-sm-12 col-lg-7 descricao">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
+          aliquam quibusdam nobis ut maxime.   Tempora quas delectus a accusamus
+          architecto consequuntur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Tempora quas delectus a accusamus 
+          architecto consequuntur.
+        </p>
 
-      <div class="col-lg-7 col-sm-12 curso1 gx-5 pb-3 mb-2 pt-5">
-        <h4 class="sub-titulo mb-5">Curso 1 - Nome do Treinamento</h4>
-        <div class="descricao">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
-            aliquam quibusdam nobis ut maxime.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Tempora quas delectus a accusamus architecto consequuntur
-          </p>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Vitae, voluptas sapiente debitis, quasi qui neque ex itaque
-          </p>
-
-        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Vitae, voluptas sapiente debitis, quasi qui neque ex itaque
+        </p>
       </div>
-
-
-      <div class="col-lg-4 col-sm-12 item g-5 mb-5 rounded ms-lg-5">
-        <img src="{{ base_url() }}/imagens/eventos.png" alt="Eventos" class="img-fluid d-block">
+      <div class="col-sm-12 col-lg-4 item">
+        <img src="{{ base_url() }}/imagens/curso.png" alt="Eventos" class="img-resposive w-100">
       </div>
-      <div class="col-lg-7 col-sm-12 gx-5 texto mr-5 mb-5 pt-2">
-        <h4 class="sub-titulo mb-5">Curso 2 - Nome do Treinamento</h4>
-        <div class="descricao">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Doloremque aliquam quibusdam nobis ut maxime, ab molestiae.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Tempora quas delectus a accusamus architecto consequuntur.
-          </p>
+    </div>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            voluptas sapiente debitis, quasi qui neque ex itaque excepturi
-          </p>
-        </div>
+    <div class="row justify-content-between pb-lg-5 flex-row-reverse">
+      <div class="col-sm-12 col-lg-4 item order-1">
+        <img src="{{ base_url() }}/imagens/curso.png" alt="Eventos" class="img-resposive w-100">
+      </div>
+      <div class="col-lg-3 w-50 mb-3 me-5 pe-5">
+        <h4 class="sub-titulo me-3">Curso 1 - Nome do Treinamento</h4>
+      </div>
+      <div class="col-sm-12 col-lg-7 descricao">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
+          aliquam quibusdam nobis ut maxime.   Tempora quas delectus a accusamus
+          architecto consequuntur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Tempora quas delectus a accusamus 
+          architecto consequuntur.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Vitae, voluptas sapiente debitis, quasi qui neque ex itaque
+        </p>
       </div>
     </div>
   </div>
@@ -158,8 +164,8 @@
         <div id="carouselE
         xampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark"
-              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+              class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark"
               aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-dark"
@@ -169,13 +175,15 @@
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-lg-6">
-                   <a href=""></a>
-                   <img src="{{ base_url() }}/imagens/video1.png" alt="Eventos" class="img-fluid img-responsive d-block w-100">
-                   <p class="">Lorem ipsum dolor sit.</p>
+                  <a href=""></a>
+                  <img src="{{ base_url() }}/imagens/video1.png" alt="Eventos"
+                    class="img-fluid img-responsive d-block w-100">
+                  <p class="">Lorem ipsum dolor sit.</p>
                 </div>
                 <div class="col-lg-6">
                   <a href=""></a>
-                  <img src="{{ base_url() }}/imagens/video2.png" alt="Eventos" class="img-fluid img-responsive d-block w-100">
+                  <img src="{{ base_url() }}/imagens/video2.png" alt="Eventos"
+                    class="img-fluid img-responsive d-block w-100">
                   <p class="m-0">Lorem ipsum dolor sit.</p>
                 </div>
               </div>
@@ -183,13 +191,15 @@
             <div class="carousel-item">
               <div class="row">
                 <div class="col-lg-6">
-                   <a href=""></a>
-                   <img src="{{ base_url() }}/imagens/video1.png" alt="Eventos" class="img-fluid img-responsive d-block w-100">
-                   <p class="">Lorem ipsum dolor sit.</p>
+                  <a href=""></a>
+                  <img src="{{ base_url() }}/imagens/video1.png" alt="Eventos"
+                    class="img-fluid img-responsive d-block w-100">
+                  <p class="">Lorem ipsum dolor sit.</p>
                 </div>
                 <div class="col-lg-6">
                   <a href=""></a>
-                  <img src="{{ base_url() }}/imagens/video2.png" alt="Eventos" class="img-fluid img-responsive d-block w-100">
+                  <img src="{{ base_url() }}/imagens/video2.png" alt="Eventos"
+                    class="img-fluid img-responsive d-block w-100">
                   <p class="m-0">Lorem ipsum dolor sit.</p>
                 </div>
               </div>
@@ -197,8 +207,8 @@
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-lg-6">
-                   <img src="{{ base_url() }}/imagens/video1.png" alt="Eventos" class="img-fluid d-block w-100">
-                   <p class="">Lorem ipsum dolor sit.</p>
+                  <img src="{{ base_url() }}/imagens/video1.png" alt="Eventos" class="img-fluid d-block w-100">
+                  <p class="">Lorem ipsum dolor sit.</p>
                 </div>
                 <div class="col-lg-6">
                   <img src="{{ base_url() }}/imagens/video2.png" alt="Eventos" class="img-fluid d-block w-100">
@@ -229,41 +239,39 @@
     <div class="row conteudo px-2">
       <div class="col-lg-3 g texto">
         <h2 class="titulo-nossos-cursos">Fale Comigo</h2>
-      </div>  
-    </div>  
-        <div class="row itens">
-          <div class="col-lg-3 item">
-            <h3 class="sub-titulo">Telefone:</h3>
-            <div class="text-light detalhes">
-              <i class="bi bi-whatsapp"></i>
-              <a href="tel:55 35 99999-9999" class="link-light" target="_blank">+55 35 99999-9999</a>
-            </div>
-          </div>
-          <div class="col-lg-3 item">
-            <h3 class="sub-titulo">Email:</h3>
-            <div class="detalhes">
-              <i class="bi bi-envelope-at"></i>
-              <a href="mailto:igorv386@gmail.com" target="_blank" class="link-light">igorv386@gmail.com</a>
-            </div>
-          </div>
-          <div class="col-lg-3 item">
-            <h3 class="sub-titulo">Siga-me:</h3>
-            <div class="detalhes">
-              <a href="#" target="_blank">
-                <i class="bi bi-facebook ms-3"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="bi bi-youtube mx-4"></i>
-              </a>
-              <a href="#" target="_blank">
-                <i class="bi bi-instagram me-3"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-2 item">
-            <img src="{{ base_url() }}/imagens/dado_email.png" alt="Eventos" class="img-fluid img-responsive">
-          </div>
+      </div>
+    </div>
+    <div class="row itens">
+      <div class="col-lg-3 item">
+        <h3 class="sub-titulo">Telefone:</h3>
+        <div class="text-light detalhes">
+          <i class="bi bi-whatsapp"></i>
+          <a href="tel:55 35 99999-9999" class="link-light" target="_blank">+55 35 99999-9999</a>
         </div>
+      </div>
+      <div class="col-lg-3 item">
+        <h3 class="sub-titulo">Email:</h3>
+        <div class="detalhes">
+          <i class="bi bi-envelope-at"></i>
+          <a href="mailto:igorv386@gmail.com" target="_blank" class="link-light">igorv386@gmail.com</a>
+        </div>
+      </div>
+      <div class="col-lg-3 item">
+        <h3 class="sub-titulo">Siga-me:</h3>
+        <div class="detalhes">
+          <a href="#" target="_blank">
+            <i class="bi bi-facebook ms-3"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="bi bi-youtube mx-4"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="bi bi-instagram me-3"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-2 item">
+        <img src="{{ base_url() }}/imagens/dado_email.png" alt="Eventos" class="img-fluid img-responsive">
       </div>
     </div>
   </div>

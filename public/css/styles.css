@@ -120,14 +120,14 @@ input {
   font-style: italic;
   position: relative; }
   .titulo-nossos-cursos:after {
-    width: 100%;
+    width: 25%;
     max-width: 100%;
     height: 5px;
     position: absolute;
     content: " ";
     background-color: #fff;
     bottom: 0;
-    left: 0; }
+    left: 332px; }
 
 .text-dark {
   font-size: 18px;
@@ -135,6 +135,13 @@ input {
   font-family: "Monteserrat Medium"; }
 
 .titulo-dark {
+  color: #000;
+  font-size: 36px;
+  line-height: 57px;
+  font-family: "Monteserrat Medium";
+  font-style: italic; }
+
+.sub-titulo-dark {
   color: #000;
   font-size: 36px;
   line-height: 57px;
@@ -162,15 +169,13 @@ input {
   position: relative; }
   .curso1::after {
     width: 65%;
-    max-width: 655px;
-    height: 4px;
+    max-width: 400px;
+    height: 3px;
     position: absolute;
     content: " ";
     background-color: #fff;
     bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto; }
+    left: 300px; }
 
 .texto {
   font-size: 18px;
@@ -191,14 +196,14 @@ input {
 
 .sub-titulo {
   color: #fff;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 57px;
   font-family: "Monteserrat Medium";
   font-style: italic; }
 
 .sub-titulo-dark {
   color: #000;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 57px;
   font-family: "Monteserrat Medium";
   font-style: italic; }
